@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('../font/Manrope-VariableFont_wght.ttf');
+    font-weight: 200 800;
+}
+@font-face {
+    font-family: 'Forum';
+    src: url('../font/Forum-Regular.ttf');
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: none;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 80px;
+    margin: 0;
+}
+h2{
+    font-size: 32px;
+    margin: 0;
+}
+h6{
+    font-size: 28px;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.none{
+    display: none;
+}
+.button{
+    border: 1px solid white;
+    background: none;
+    border-radius: 23px;
+    overflow: hidden;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    p{
+        margin: 0;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+        letter-spacing: -0.32px;
+        color: white;
+    }
+}
+header{
+    position: static;
+    padding: 16px;
+    border-radius: 0;
+    background-color: #005D3F;
+}
+main{
+    .title{
+        padding: 80px 80px;
+        background-color: #005D3F;
+        h1{
+            font-family: Forum;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 86%; /* 68.8px */
+            letter-spacing: -0.8px;
+            color: white;
+        }
+    }
+    .card-list{
+        padding: 80px 80px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media(max-width: 784px){
+    main{
+        .title{
+            padding: 200px 20px 20px 20px;
+            h1{
+                font-family: Forum;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 86%; /* 34.4px */
+                letter-spacing: -0.4px;
+            }
+        }
+        .card-list{
+            padding: 20px;
+            grid-template-columns: 1fr;
+            .card{
+                h3{
+                    font-family: Manrope;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 36px */
+                    letter-spacing: 0.24px;
+                }
+                p{
+                    font-family: Manrope;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 140%;
+                }
+                .text{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
